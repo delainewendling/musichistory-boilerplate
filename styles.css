@@ -22,5 +22,19 @@
 }
 
 .songSelection {
+  background-color: #4DD7FA;
+  width: 30%;
+  border: black solid 2px;
+  margin-left: 7.5%;
+}
+
+.left {
+  float: left;
   display: block;
 }
+
+.right {
+  float: right;
+  display: block;
+}
+

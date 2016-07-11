@@ -18,28 +18,55 @@
   </nav>
 </header>
 <article>
-  <section class="songSelection">
-    <label for="songLength"> Song length: </label>
-    <input type="range" name="songLength" id="songLength">
-    <label for="artist"> Artist: </label>
-    <select id="artist" name="artist">
-      <option value="FGL"> Florida Georgia Line </option>
-      <option value="jonBellion"> Jon Bellion </option>
-      <option value="coldplay"> Coldplay </option>
-      <option value="taylorSwift"> Taylor Swift </option>
-      <option value=""></option>
-    </select>  
-    <label for="album"> Album: </label>
-    <select id="album" name="album">
-      <option value="album1" class="FGL"> Here's to the Good Times </option>
-      <option value="album2" class="FGL"> Anything Goes </option>
-      <option value="album3" class="FGL"> Dig Your Roots </option>
-      <option value="album1" class="jonBellion"> The Human Condition </option>
-      <option value="coldplay"> Coldplay </option>
-      <option value="taylorSwift"> Taylor Swift </option>
-      <option value=""></option>
-    </select>
-    
+  <section>
+    <form action="" class="songSelection">
+      <label for="songLength"> Song length: </label> <br>
+      <input type="range" name="songLength" id="songLength"> <br>
+      <label for="artist"> Artist: </label> <br>
+      <select id="artist" name="artist">
+        <option value="FGL"> Florida Georgia Line </option>
+        <option value="jonBellion"> Jon Bellion </option>
+        <option value="coldplay"> Coldplay </option>
+        <option value="taylorSwift"> Taylor Swift </option>
+        <option value="hillsong"> Hillsong United</option>
+      </select> <br>
+      <label for="album"> Album: </label> <br>
+      <select id="album" name="album">
+        <option value="album1" class="FGL"> Here's to the Good Times </option>
+        <option value="album2" class="FGL"> Anything Goes </option>
+        <option value="album3" class="FGL"> Dig Your Roots </option>
+        <option value="album1" class="jonBellion"> The Definition </option>
+        <option value="album2" class="jonBellion"> The Human Condition  </option>
+        <option value="album1" class="coldplay"> Parachutes </option>
+        <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
+        <option value="album3" class="coldplay"> X&amp;Y </option>
+        <option value="album4" class="coldplay"> Viva la Vida </option>
+        <option value="album5" class="coldplay"> Mylo Xyloto </option>
+        <option value="album6" class="coldplay"> Ghost Stories </option>
+        <option value="album7" class="coldplay"> A Head Full of Dreams </option>
+        <option value="album1" class="taylorSwift"> Fearless </option>
+        <option value="album2" class="taylorSwift"> Speak Now </option>
+        <option value="album3" class="taylorSwift"> Red </option>
+        <option value="album4" class="taylorSwift"> 1989 </option>
+        <option value="album1" class="hillsong"> Aftermath </option>
+        <option value="album2" class="hillsong"> Zion </option> 
+        <option value="album3" class="hillsong"> Empires </option>
+      </select> <br>
+      <label> Genre: </label>
+      <input type="checkbox" name="rock" id="rock" class="left">
+      <label for="rock" value="rock" class="left"> Rock </label> <br>
+      <input type="checkbox" name="pop" id="pop" class="left">
+      <label for="pop" value="pop"class="left"> Pop </label> <br>
+      <input type="checkbox" name="country" id="country" class="left">
+      <label for="country" value="country" class="left"> Country </label> <br>
+      <input type="checkbox" name="alternative" id="alternative" class="right"> 
+      <label for="alternative" value="alternative" class="right"> Alternative </label> 
+      <input type="checkbox" name="classical" id="classical" class="right"> 
+      <label for="classical" value="classical" class="right"> Classical </label> 
+      <input type="checkbox" name="hip_hop" id="hip_hop" class="right">
+      <label for="hip_hop" value="hip_hop" class="right"> Hip Hop </label> <br>
+      <button type="submit"> Filter </button>
+    </form>
   </section>
 </article>
 <article>
