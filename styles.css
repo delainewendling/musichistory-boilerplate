@@ -1,0 +1,26 @@
+.navBar {
+  background-color: #FFB4B0;
+  width: 85%;
+  margin: 20px auto 10px;
+  height: 53px;
+  border: black solid 2px;
+}
+
+.navBar li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.navBar a {
+  text-decoration: none; 
+  color: blue;
+}
+
+.navBar .selected a {
+  color: black;
+}
+
+.songSelection {
+  display: block;
+}

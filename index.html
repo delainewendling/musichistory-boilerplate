@@ -1,13 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
+<header>
+  <nav class="navBar">
+    <ul>
+      <li class="selected"> <a href=""> View Music | </a> </li>
+      <li> <a href=""> Add Music | </a></li>
+      <li> <a href=""> Profile </a></li>
+    </ul>
+  </nav>
+</header>
+<article>
+  <section class="songSelection">
+    <label for="songLength"> Song length: </label>
+    <input type="range" name="songLength" id="songLength">
+    <label for="artist"> Artist: </label>
+    <select id="artist" name="artist">
+      <option value="FGL"> Florida Georgia Line </option>
+      <option value="jonBellion"> Jon Bellion </option>
+      <option value="coldplay"> Coldplay </option>
+      <option value="taylorSwift"> Taylor Swift </option>
+      <option value=""></option>
+    </select>  
+    <label for="album"> Album: </label>
+    <select id="album" name="album">
+      <option value="album1" class="FGL"> Here's to the Good Times </option>
+      <option value="album2" class="FGL"> Anything Goes </option>
+      <option value="album3" class="FGL"> Dig Your Roots </option>
+      <option value="album1" class="jonBellion"> The Human Condition </option>
+      <option value="coldplay"> Coldplay </option>
+      <option value="taylorSwift"> Taylor Swift </option>
+      <option value=""></option>
+    </select>
+    
+  </section>
+</article>
+<article>
+  <section></section>
+</article>
+<footer></footer>
 
 </body>
 </html>
