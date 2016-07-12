@@ -8,7 +8,9 @@
 </head>
 
 <body>
+<article>
 <header>
+<!-- Navigation Bar -->
   <nav class="navBar">
     <ul>
       <li class="selected"> <a href=""> View Music | </a> </li>
@@ -17,11 +19,15 @@
     </ul>
   </nav>
 </header>
-<article>
+</article>
+<!-- Blue left side bar that allows user to select artist, album, etc -->
+<article class="songSelection">
   <section>
-    <form action="" class="songSelection">
+    <form action="" class="songForm">
+    <!-- Song Length -->
       <label for="songLength"> Song length: </label> <br>
       <input type="range" name="songLength" id="songLength"> <br>
+      <!-- Artist Options -->
       <label for="artist"> Artist: </label> <br>
       <select id="artist" name="artist">
         <option value="FGL"> Florida Georgia Line </option>
@@ -30,13 +36,17 @@
         <option value="taylorSwift"> Taylor Swift </option>
         <option value="hillsong"> Hillsong United</option>
       </select> <br>
+      <!-- Album Options -->
       <label for="album"> Album: </label> <br>
       <select id="album" name="album">
+        <!-- FGL Albums -->
         <option value="album1" class="FGL"> Here's to the Good Times </option>
         <option value="album2" class="FGL"> Anything Goes </option>
         <option value="album3" class="FGL"> Dig Your Roots </option>
+        <!-- Jon Bellion Albums  -->
         <option value="album1" class="jonBellion"> The Definition </option>
         <option value="album2" class="jonBellion"> The Human Condition  </option>
+        <!-- Coldplay Albums -->
         <option value="album1" class="coldplay"> Parachutes </option>
         <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
         <option value="album3" class="coldplay"> X&amp;Y </option>
@@ -44,21 +54,26 @@
         <option value="album5" class="coldplay"> Mylo Xyloto </option>
         <option value="album6" class="coldplay"> Ghost Stories </option>
         <option value="album7" class="coldplay"> A Head Full of Dreams </option>
+        <!-- Taylor Swift Albums -->
         <option value="album1" class="taylorSwift"> Fearless </option>
         <option value="album2" class="taylorSwift"> Speak Now </option>
         <option value="album3" class="taylorSwift"> Red </option>
         <option value="album4" class="taylorSwift"> 1989 </option>
+        <!-- Hillsong United Albums -->
         <option value="album1" class="hillsong"> Aftermath </option>
         <option value="album2" class="hillsong"> Zion </option> 
         <option value="album3" class="hillsong"> Empires </option>
       </select> <br>
+      <!-- Genre Options -->
       <label> Genre: </label>
+      <!-- These should be on the left -->
       <input type="checkbox" name="rock" id="rock" class="left">
       <label for="rock" value="rock" class="left"> Rock </label> <br>
       <input type="checkbox" name="pop" id="pop" class="left">
       <label for="pop" value="pop"class="left"> Pop </label> <br>
       <input type="checkbox" name="country" id="country" class="left">
       <label for="country" value="country" class="left"> Country </label> <br>
+      <!-- These should be on the right -->
       <input type="checkbox" name="alternative" id="alternative" class="right"> 
       <label for="alternative" value="alternative" class="right"> Alternative </label> 
       <input type="checkbox" name="classical" id="classical" class="right"> 
@@ -69,8 +84,34 @@
     </form>
   </section>
 </article>
-<article>
-  <section></section>
+ <!-- This section shows the songs from the selected album -->
+<article class = "songs">
+   <section>
+   <h2> Smooth </h2>
+      <ul class="songStats">
+        <li> FGL | </li>
+        <li> Dig Your Roots | </li>
+        <li> Country </li>
+      </ul>
+    <h2> Maybe IDK </h2>
+      <ul class="songStats">
+        <li> Jon Bellion | </li>
+        <li> The Human Condition | </li>
+        <li> Alternative </li>
+      </ul>
+    <h2> Magic </h2>
+      <ul class="songStats">
+        <li> Cold Play | </li>
+        <li> Ghost Stories | </li>
+        <li> Alternative/Pop </li>
+      </ul>
+    <h2> Here Now (Madness) </h2>
+      <ul class="songStats">
+        <li> Hillsong | </li>
+        <li> Empires | </li>
+        <li> Christian </li>
+      </ul>
+  </section>
 </article>
 <footer></footer>
 
