@@ -25,11 +25,11 @@
   <section>
     <form action="" class="songForm">
     <!-- Song Length -->
-      <label for="songLength"> Song length: </label> <br>
-      <input type="range" name="songLength" id="songLength"> <br>
+      <label for="songLength" class="label"> Song length: </label>
+      <input type="range" name="songLength" id="songLength" class="field"> <br>
       <!-- Artist Options -->
-      <label for="artist"> Artist: </label> <br>
-      <select id="artist" name="artist">
+      <label for="artist" class="label"> Artist: </label> 
+      <select id="artist" name="artist" class="field">
         <option value="FGL"> Florida Georgia Line </option>
         <option value="jonBellion"> Jon Bellion </option>
         <option value="coldplay"> Coldplay </option>
@@ -37,8 +37,8 @@
         <option value="hillsong"> Hillsong United</option>
       </select> <br>
       <!-- Album Options -->
-      <label for="album"> Album: </label> <br>
-      <select id="album" name="album">
+      <label for="album" class="label"> Album: </label> 
+      <select id="album" name="album" class="field">
         <!-- FGL Albums -->
         <option value="album1" class="FGL"> Here's to the Good Times </option>
         <option value="album2" class="FGL"> Anything Goes </option>
@@ -65,7 +65,7 @@
         <option value="album3" class="hillsong"> Empires </option>
       </select> <br>
       <!-- Genre Options -->
-      <label> Genre: </label>
+      <label class="label clearfix"> Genre: </label>
       <!-- These should be on the left -->
       <div class="left">
       <input type="checkbox" name="rock" id="rock">
@@ -84,7 +84,7 @@
       <input type="checkbox" name="hip_hop" id="hip_hop">
       <label for="hip_hop" value="hip_hop"> Hip Hop </label> 
       </div>
-      <button type="submit"> Filter </button>
+      <button type="submit" class="clearfix"> Filter </button>
     </form>
   </section>
 </article>
