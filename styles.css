@@ -25,35 +25,39 @@ body {
 }
 
 .songSelection {
-  /*position: relative;*/
-  /*top: -100px;*/
-  display: inline-block;
+  float: left;
   background-color: #4DD7FA;
   width: 25%;
   border: black solid 2px;
   margin-left: 7.5%;
+  min-height: 401px;
 }
 
 .songForm {
-  display: inline-block;
-  margin: 0;
+  padding: 10px;
 }
 
-/*.left {
-  float: left;
+/*.songSelection label {
+  display: inline-block;
+  margin: 0;
+}*/
+
+.left {
   display: block;
+  float: left;
 }
 
 .right {
-  float: right;
   display: block;
-}*/
+  float: right;
+}
 
 .songs {
-  display: inline-block;
+  float: right;
+  margin-right: 7.5%;
   background-color: #FEFAC0;
   border: black solid 2px;
-  width: 59%;
+  width: 58%;
 }
 
 .songs h2 {
@@ -66,4 +70,7 @@ body {
 .songStats li {
   display: inline-block;
   list-style-type: none;
+}
+.submit {
+  margin: 0 auto;
 }
