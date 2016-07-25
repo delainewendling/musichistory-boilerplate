@@ -16,7 +16,7 @@ body {
 }
 
 .navBar a {
-  text-decoration: none; 
+  text-decoration: none;
   color: blue;
 }
 
@@ -196,6 +196,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: #fff;
     font-size: .85em;
     cursor: pointer;
+    max-width: 100%;
    }
 
   input[type="checkbox"] {
