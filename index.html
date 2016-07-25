@@ -14,11 +14,11 @@
   <nav class="navBar">
     <ul>
       <li> <a href="#" id="listMusic"> List Music | </a> </li>
-      <li> <a href="#addMusicViews" id="addMusic"> Add Music </a></li>
+      <li> <a href="#addMusicView" id="addMusic"> Add Music </a></li>
     </ul>
   </nav>
 </header>
-<article id="addMusicView">
+<article id="addMusicView" class="page hidden">
   <section class="addSongs">
     <label for="songName" class="first"> Song Name: </label>
     <input type="text" name="songName" id="songName" class="first">
@@ -31,7 +31,7 @@
 </article>
 
 <!-- Blue left side bar that allows user to select artist, album, etc -->
-<article id="listMusicView">
+<article id="listMusicView" class="page">
   <section class="songSelection">
     <form action="" class="songForm">
     <!-- Song Length -->
@@ -97,7 +97,7 @@
       <button type="submit" class="clearfix"> Filter </button>
     </form>
   </section>
- <!-- This section shows the songs from the selected album -- >
+ <!-- This section shows the songs -->
   <section id="songContainer" class="songs">
    <h2> Smooth </h2>
       <ul class="songStats">

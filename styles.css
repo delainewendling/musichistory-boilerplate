@@ -26,7 +26,7 @@ body {
   color: blue;
 }
 
-.navBar .selected a{
+.navBar .selected {
   color: black;
 }
 
@@ -94,7 +94,7 @@ body {
 .addSongs input {
   border: 2px solid black;
 }
-.first, 
+.first,
 .second,
 .third {
   display: inline-block;
@@ -159,7 +159,7 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
-   select {
+select {
     height: 25px;
     border-radius: 8px;
     border: solid 2px black;
@@ -186,9 +186,3 @@ input[type=range]::-ms-track {
     width: 65%;
     cursor: pointer;
   }
-
-
-
-
-
-

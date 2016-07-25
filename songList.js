@@ -1,15 +1,30 @@
-console.log("hello")
-document.getElementById("listMusic").addEventListener("click", (e)=> {
-  console.log("listmusic")
-  document.getElementById("addMusicView").className = "hidden";
-  document.getElementById("listMusic").className = "selected";
-});
+var nav = document.querySelectorAll(".navBar li");
+console.log(nav)
+var pages = document.querySelectorAll(".page");
+for (let i=0; i<nav.length; i++) {
+  nav[i].addEventListener("click", (e) => {
+    //This for loop will add the class of hidden to all of the elements with the class page.
+    for (let j=0; j<pages.length; j++) { //Need new variable if this is inside the function above. If not, this can be i again.
+      pages[j].classList.add("hidden");
+    }
+    showPage(e.target.hash);
+    console.log(e)
+  })
+}
 
-document.getElementById("addMusic").addEventListener("click", (e)=> {
-  document.getElementById("listMusicView").className = "hidden";
-  document.getElementById("addMusic").className = "selected";
-  console.log("addmusic");
-});
+function showPage (id) {
+  if (id) { //empty string is falsey so if hash is empty it will be false, otherwise it will be true
+      document.querySelector(id).classList.remove("hidden");
+      document.getElementById("addMusic").classList.add("selected")
+      document.getElementById("listMusic").classList.remove("selected")
+    } else {
+      document.querySelector("#listMusicView").classList.remove("hidden");
+      document.getElementById("listMusic").classList.add("selected")
+      document.getElementById("addMusic").classList.remove("selected")
+    }
+}
+
+
 
 // <h2> Smooth </h2>
 //       <ul class="songStats">
@@ -20,6 +35,15 @@ document.getElementById("addMusic").addEventListener("click", (e)=> {
 
 // var songContainer = document.getElementById("songContainer");
 
+// var songs = [];
+
+// songs[songs.length] = "Maybe IDK > by Jon !Bellion on the album The Human Condition";
+// songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
+// songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
+// songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
+// songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
+// songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+// songs[songs.length] = "Magic > by Coldplay^ on the album Ghost Stories";
 
 // var removeChar = []
 // for(i=0; i<songs.length; i++) {
@@ -33,6 +57,7 @@ document.getElementById("addMusic").addEventListener("click", (e)=> {
 //   songContainer.innerHTML +=
 //     `<p> ${finalArray[i]} </p>`
 // }
+
 
 
 
