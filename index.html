@@ -13,22 +13,32 @@
 <!-- Navigation Bar -->
   <nav class="navBar">
     <ul>
-      <li class="selected"> <a href=""> View Music | </a> </li>
-      <li> <a href=""> Add Music | </a></li>
-      <li> <a href=""> Profile </a></li>
+      <li> <a href="#" id="listMusic"> List Music | </a> </li>
+      <li> <a href="#addMusicViews" id="addMusic"> Add Music </a></li>
     </ul>
   </nav>
 </header>
+<article id="addMusicView">
+  <section class="addSongs">
+    <label for="songName" class="first"> Song Name: </label>
+    <input type="text" name="songName" id="songName" class="first">
+    <label for="artist" class="second"> Artist: </label>
+    <input type="text" name="artist" id="artist" class="second">
+    <label for="album" class="third"> Album: </label>
+    <input type="text" name="album" id="album" class="third">
+    <button id="submit"> Add </button>
+  </section>
 </article>
+
 <!-- Blue left side bar that allows user to select artist, album, etc -->
-<article class="songSelection">
-  <section>
+<article id="listMusicView">
+  <section class="songSelection">
     <form action="" class="songForm">
     <!-- Song Length -->
       <label for="songLength" class="label"> Song length: </label>
       <input type="range" name="songLength" id="songLength" class="field"> <br>
       <!-- Artist Options -->
-      <label for="artist" class="label"> Artist: </label> 
+      <label for="artist" class="label"> Artist: </label>
       <select id="artist" name="artist" class="field">
         <option value="FGL"> Florida Georgia Line </option>
         <option value="jonBellion"> Jon Bellion </option>
@@ -37,7 +47,7 @@
         <option value="hillsong"> Hillsong United</option>
       </select> <br>
       <!-- Album Options -->
-      <label for="album" class="label"> Album: </label> 
+      <label for="album" class="label"> Album: </label>
       <select id="album" name="album" class="field">
         <!-- FGL Albums -->
         <option value="album1" class="FGL"> Here's to the Good Times </option>
@@ -61,7 +71,7 @@
         <option value="album4" class="taylorSwift"> 1989 </option>
         <!-- Hillsong United Albums -->
         <option value="album1" class="hillsong"> Aftermath </option>
-        <option value="album2" class="hillsong"> Zion </option> 
+        <option value="album2" class="hillsong"> Zion </option>
         <option value="album3" class="hillsong"> Empires </option>
       </select> <br>
       <!-- Genre Options -->
@@ -73,25 +83,23 @@
       <input type="checkbox" name="pop" id="pop">
       <label for="pop" value="pop"> Pop </label> <br>
       <input type="checkbox" name="country" id="country">
-      <label for="country" value="country"> Country </label> 
+      <label for="country" value="country"> Country </label>
       </div>
       <!-- These should be on the right -->
       <div class="right">
-      <input type="checkbox" name="alternative" id="alternative"> 
+      <input type="checkbox" name="alternative" id="alternative">
       <label for="alternative" value="alternative"> Alternative </label> <br>
-      <input type="checkbox" name="classical" id="classical"> 
+      <input type="checkbox" name="classical" id="classical">
       <label for="christian" value="classical"> Christian </label> <br>
       <input type="checkbox" name="hip_hop" id="hip_hop">
-      <label for="hip_hop" value="hip_hop"> Hip Hop </label> 
+      <label for="hip_hop" value="hip_hop"> Hip Hop </label>
       </div>
       <button type="submit" class="clearfix"> Filter </button>
     </form>
   </section>
-</article>
- <!-- This section shows the songs from the selected album -->
-<article class = "songs">
-   <section id="songContainer">
-   <!-- <h2> Smooth </h2>
+ <!-- This section shows the songs from the selected album -- >
+  <section id="songContainer" class="songs">
+   <h2> Smooth </h2>
       <ul class="songStats">
         <li> FGL | </li>
         <li> Dig Your Roots | </li>
@@ -114,10 +122,10 @@
         <li> Hillsong | </li>
         <li> Empires | </li>
         <li> Christian </li>
-      </ul> -->
+      </ul>
   </section>
 </article>
 <footer></footer>
-<script type="text/javascript" src="songs.js"></script>
+<script type="text/javascript" src="songList.js"></script>
 </body>
 </html>
